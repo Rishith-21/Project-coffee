@@ -96,7 +96,7 @@ export default function Hero() {
       <section className="border-b border-[#C8A27C]/12 bg-gradient-to-b from-[#362019] to-[#3b231c]">
         <motion.div {...fadeUp} className="mx-auto w-full max-w-5xl px-6 py-12 sm:py-14">
             <h5 className="mt-2 text-center text-5xl font-medium leading-[1.04] tracking-[0.01em] text-[#F5F5DC] sm:text-6xl" style={{ fontFamily: "Cormorant Garamond, serif" }}>
-            <span className="italic text-[#C8A27C]">We've been busy You'll see why </span>
+            <span className="italic text-[#C8A27C]">We've been busy! You'll see why </span>
           </h5>
           <div className="mx-auto mt-10 flex w-full max-w-4xl justify-center"><Countdown /></div>
           <p className="mt-12 text-center text-3xl font-medium italic tracking-[0.01em] text-[#C8A27C] sm:text-4xl" style={{ fontFamily: "Cormorant Garamond, serif" }}>Cafe Opens on 3rd July 2026</p>
@@ -157,7 +157,7 @@ export default function Hero() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(200,162,124,0.18),transparent_52%)]" />
         <motion.div {...fadeUp} className="mx-auto max-w-4xl text-center">
           <p className="text-[0.68rem] font-medium uppercase tracking-[0.6em] text-[#C8A27C] sm:text-xs">Join the Inner Circle</p>
-          <h6 className="mt-6 text-5xl font-medium leading-tight tracking-[0.01em] text-[#F5F5DC] sm:text-6xl" style={{ fontFamily: "Cormorant Garamond, serif" }}>
+          <h6 className="mt-6 text-4xl font-medium leading-tight tracking-[0.01em] text-[#F5F5DC] sm:text-6xl" style={{ fontFamily: "Cormorant Garamond, serif" }}>
             Be the first to <span className="italic text-[#C8A27C]">walk in.</span>
           </h6>
           <p className="mx-auto mt-6 max-w-3xl text-lg font-light leading-relaxed tracking-[0.01em] text-[#F5F5DC]/88 sm:text-[1.7rem]">Drop your email and we will send you an invitation for opening week.</p>
@@ -168,12 +168,41 @@ export default function Hero() {
               whileHover={{ scale: 1.02, boxShadow: "0 12px 36px rgba(232,217,178,0.22)" }}
               whileTap={{ scale: 0.99 }}
               type="button"
-              className="mt-8 w-full rounded-full bg-[#F5F5DC] px-8 py-5 text-3xl text-[#3E221A] transition-all duration-300 hover:bg-[#e8d9b2]"
+              className="mt-8 w-full rounded-full bg-[#F5F5DC] px-8 py-5 text-2xl text-[#3E221A] transition-all duration-300 hover:bg-[#e8d9b2] sm:text-3xl"
               style={{ fontFamily: "Cormorant Garamond, serif" }}
             >
               Notify Me &rarr;
             </motion.button>
           </motion.form>
+
+          <div className="mx-auto mt-14 flex w-full max-w-lg items-center gap-5">
+            <div className="h-px flex-1 bg-[#C8A27C]/35" />
+            <p className="text-[0.68rem] uppercase tracking-[0.5em] text-[#C8A27C]/85 sm:text-xs">Or Follow Along</p>
+            <div className="h-px flex-1 bg-[#C8A27C]/35" />
+          </div>
+
+          <motion.a
+            href="https://instagram.com/nofiltr.artcafe"
+            target="_blank"
+            rel="noreferrer"
+            whileHover={{ y: -2, scale: 1.01 }}
+            className="mx-auto mt-7 inline-flex items-center gap-3 rounded-full border border-[#C8A27C]/30 bg-[#4A291F]/28 px-7 py-3 text-xl text-[#F5F5DC] backdrop-blur-sm transition-all duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.9"
+              className="h-6 w-6 text-[#F5F5DC]"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+              <path d="M16 11.37a4 4 0 1 1-3.37-3.37 4 4 0 0 1 3.37 3.37z" />
+              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+            </svg>
+            <span className="text-2xl">@nofiltr.artcafe</span>
+          </motion.a>
         </motion.div>
       </section>
     </main>
